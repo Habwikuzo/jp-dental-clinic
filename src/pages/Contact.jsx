@@ -24,29 +24,56 @@ function Contact() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           <div className="bg-gray-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-3">Call Us</h3>
-            <p>+91 98985 55580</p>
+
+            <p>+91 97312 40612</p>
+            <p>+91 80959 39038</p>
+            <p>080-41200625</p>
           </div>
 
           <div className="bg-gray-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-3">Email</h3>
-            <p>info@jpdentalclinic.com</p>
+
+            <p>jpdental21@gmail.com</p>
           </div>
 
           <div className="bg-gray-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-3">Visit Us</h3>
-            <p>JP Dental Clinic Location</p>
+
+            <p>
+              JP Dental Clinic
+              <br />
+              1st Floor, SRIDS Arcade
+              <br />
+              46th Cross Road
+              <br />
+              8th Block, Jayanagar
+              <br />
+              Bengaluru, Karnataka 560070
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Form */}
-      <section className="py-20 px-10 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">
-            Send Us A Message
+      {/* Google Map */}
+      <section className="py-20 px-10 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">
+            Find Us On Map
           </h2>
 
-          <form className="bg-white p-8 rounded-xl shadow-md">
+          <iframe
+            src="https://www.google.com/maps?q=JP+Dental+Clinic,+Jayanagar,+Bengaluru&output=embed"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            loading="lazy"
+            title="JP Dental Clinic Location"
+            className="rounded-xl shadow-lg"
+          ></iframe>
+        </div>
+      </section>
+
+      {/* Form8 rounded-xl shadow-md">
             <input
               type="text"
               placeholder="Full Name"

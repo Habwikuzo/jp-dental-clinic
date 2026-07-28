@@ -1,12 +1,15 @@
+import logo from "../assets/images/logo.jpg";
 function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-5 gap-8">
         {/* Logo */}
         <div>
-          <h2 className="text-2xl font-bold text-cyan-400">
-            JP DENTAL
-          </h2>
+          <img
+  src={logo}
+  alt="JP Dental Clinic Logo"
+  className="h-20 w-auto"
+/>
 
           <p className="text-gray-400 mt-4 text-sm">
             We are committed to providing painless,
@@ -64,17 +67,24 @@ function Footer() {
         </div>
 
         {/* Contact */}
-        <div>
-          <h3 className="font-bold mb-4">CONTACT US</h3>
+        {/* Contact */}
+<div>
+  <h3 className="font-bold mb-4">CONTACT US</h3>
 
-          <ul className="space-y-3 text-gray-400">
-            <li>📞 +91 98985 55580</li>
-            <li>✉ info@jpdentalclinic.com</li>
-            <li>📍 JP Dental Clinic</li>
-            <li>🕒 Mon - Sat</li>
-            <li>9:00 AM - 7:00 PM</li>
-          </ul>
-        </div>
+  <ul className="space-y-3 text-gray-400">
+    <li>📞 +91 97312 40612</li>
+    <li>📞 +91 80959 39038</li>
+    <li>☎ 080-41200625</li>
+    <li>✉ jpdental21@gmail.com</li>
+    <li>
+      📍 1st Floor, SRIDS Arcade,
+      46th Cross Road,
+      8th Block, Jayanagar,
+      Bengaluru, Karnataka 560070
+    </li>
+
+  </ul>
+</div>
       </div>
 
       <div className="border-t border-slate-800">
