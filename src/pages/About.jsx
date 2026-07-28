@@ -1,3 +1,5 @@
+import drJigna from "../assets/images/doctors/dr-jigna.jpg";
+import drPadmaja from "../assets/images/doctors/dr-padmaja.jpg";
 function About() {
   return (
     <div>
@@ -123,19 +125,31 @@ function About() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-gray-50 p-6 rounded-xl text-center shadow-md">
-              <div className="h-48 bg-gray-200 rounded-lg mb-4"></div>
+             <img
+  src={drJigna}
+  alt="Dr. Jigna"
+  className="w-full h-64 object-cover rounded-xl"
+/>
               <h3 className="text-xl font-bold">Dr. Jigna Thakkar</h3>
               <p className="text-gray-600">Orthodontics Specialist</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl text-center shadow-md">
-              <div className="h-48 bg-gray-200 rounded-lg mb-4"></div>
+              <img
+  src={drPadmaja}
+  alt="Dr. Padmaja"
+  className="w-full h-64 object-cover rounded-xl"
+/>
               <h3 className="text-xl font-bold">Dr. Padmaja Vigy</h3>
               <p className="text-gray-600">Conservative Dentistry</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl text-center shadow-md">
-              <div className="h-48 bg-gray-200 rounded-lg mb-4"></div>
+              <img
+  src={drPadmaja}
+  alt="Dr. Padmaja"
+  className="w-full h-64 object-cover rounded-xl"
+/>
               <h3 className="text-xl font-bold">Dental Specialist</h3>
               <p className="text-gray-600">General Dentistry</p>
             </div>

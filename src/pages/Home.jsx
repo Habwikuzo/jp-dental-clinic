@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import heroDental from "../assets/images/hero-dental.jpg";
+import drJigna from "../assets/images/doctors/dr-jigna.jpg";
+import drPadmaja from "../assets/images/doctors/dr-padmaja.jpg";
+import beforeAfter1 from "../assets/images/gallery/before-after-1.jpg";
+import beforeAfter2 from "../assets/images/gallery/before-after-2.jpg";
+import beforeAfter3 from "../assets/images/gallery/before-after-3.jpg";
 function Home() {
   const services = [
     "Dental Implants",
@@ -9,6 +14,12 @@ function Home() {
     "Teeth Whitening",
     "Kids Dentistry",
   ];
+const smileGallery = [
+  beforeAfter1,
+  beforeAfter2,
+  beforeAfter3,
+];
+
 
   return (
     <div>
@@ -142,16 +153,20 @@ function Home() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="bg-gray-200 h-48 rounded-xl flex items-center justify-center"
-              >
-                Before / After
-              </div>
-            ))}
-          </div>
+        <div className="grid md:grid-cols-3 gap-6">
+  {smileGallery.map((image, index) => (
+    <div
+      key={index}
+      className="h-48 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+    >
+      <img
+        src={image}
+        alt={`Smile Transformation ${index + 1}`}
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
@@ -186,31 +201,41 @@ function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="border rounded-xl p-5">
-              <div className="bg-gray-200 h-48 rounded mb-4">
-              </div>
+            <div className="border rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="h-48 rounded-lg overflow-hidden mb-4">
+    <img
+      src={drJigna}
+      alt="Dr. Jigna Thakkar"
+      className="w-full h-full object-contain bg-white"
+    />
+  </div>
 
-              <h3 className="font-bold">
-                Dr. Jigna Thakkar
-              </h3>
+  <h3 className="font-bold text-xl">
+    Dr. Jigna Thakkar
+  </h3>
 
-              <p className="text-gray-600">
-                Orthodontics Specialist
-              </p>
-            </div>
+  <p className="text-gray-600">
+    Orthodontics Specialist
+  </p>
+</div>
 
-            <div className="border rounded-xl p-5">
-              <div className="bg-gray-200 h-48 rounded mb-4">
-              </div>
+            <div className="border rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="h-48 rounded-lg overflow-hidden mb-4">
+    <img
+      src={drPadmaja}
+      alt="Dr. Padmaja Vig"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-              <h3 className="font-bold">
-                Dr. Padmaja Vigy
-              </h3>
+  <h3 className="font-bold text-xl">
+    Dr. Padmaja Vig
+  </h3>
 
-              <p className="text-gray-600">
-                Conservative Dentistry
-              </p>
-            </div>
+  <p className="text-gray-600">
+    Conservative Dentistry
+  </p>
+</div>
           </div>
         </div>
       </section>
