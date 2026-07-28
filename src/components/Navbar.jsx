@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
-
+import logo from "../assets/images/logo.jpg";
 function Navbar() {
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="font-bold text-xl text-cyan-600">
-          JP DENTAL
-        </Link>
+        <Link to="/" className="flex items-center">
+  <img
+    src={logo}
+    alt="JP Dental Clinic Logo"
+    className="h-12 w-auto"
+  />
+</Link>
 
         {/* Menu */}
         <div className="flex gap-6">

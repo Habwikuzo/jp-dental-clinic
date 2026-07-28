@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import heroDental from "../assets/images/hero-dental.jpg";
 function Home() {
   const services = [
     "Dental Implants",
@@ -67,9 +67,13 @@ function Home() {
             </div>
           </div>
 
-          <div className="bg-gray-200 h-[450px] rounded-2xl flex items-center justify-center">
-            Hero Image
-          </div>
+          <div className="h-[450px] rounded-2xl overflow-hidden shadow-xl">
+  <img
+    src={heroDental}
+    alt="JP Dental Clinic"
+    className="w-full h-full object-cover"
+  />
+</div>
         </div>
       </section>
 
